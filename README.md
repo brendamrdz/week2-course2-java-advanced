@@ -185,8 +185,8 @@ Each catch block is an exception handler that handles the type of exception indi
 
 ```bash
 try {
-} catch (ExceptionType name) {
-} catch (ExceptionType name) {
+	} catch (ExceptionType name) {
+	} catch (ExceptionType name) {
 } 
 ```
 
@@ -208,7 +208,7 @@ Support for try-with-resources – introduced in Java 7 – allows us to declare
 BufferdReader reader = new BufferedReafer(new InputStreamReader(System.in));
 try(reader){
 //sentencias
-} catch(Exception e){
+}catch(Exception e){
 }
 ```
 
@@ -259,11 +259,11 @@ To define a lambda we can do it by implementing:
 ```bash
 OnOneListener oneListener = new OnOneListener () {
 	//Without lambda
-	@Override
-	public void onOne (String message) {
-	// TODO Auto-generated method stub
-	System.out.println ("One:" + message);
-	}
+		@Override
+		public void onOne (String message) {
+		// TODO Auto-generated method stub
+		System.out.println ("One:" + message);
+		}
 	};
 
 	//With Lamnda
